@@ -1,3 +1,2 @@
-n = int(input())
-float(n)
-print(n)
+n = float(input())
+print(round(n,2))
