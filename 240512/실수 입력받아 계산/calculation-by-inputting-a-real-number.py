@@ -1,4 +1,4 @@
 a = float(input())
 b = float(input())
-total = a + b
-print(round(total, 2))
+total = round(a + b, 2)
+print("{:.2f}".format(total))
