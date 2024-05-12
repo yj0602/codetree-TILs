@@ -1,5 +1,3 @@
-lst = []
-a = int,input().split()
-for total in range(lst):
-    total += lst
+lst = list(map(int, input().split()))
+total = sum(lst)
 print(total)
