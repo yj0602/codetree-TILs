@@ -1,4 +1,4 @@
 ft = 30.48
-n = int(input())
+n = float(input())
 cm = n*ft
-print({:.1f}.format(cm))
+print({round()}.format(cm))
