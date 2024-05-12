@@ -1,5 +1,7 @@
 c = input()
-a, b = map(float,input().split())
+a = float(input())
+b = float(input())
+
 print(c)
-print("{:.2f}",round(a,2).format(a))
-print("{:.2f}",round(b,2).format(b))
+print("{:.2f}".format(round(a, 2)))
+print("{:.2f}".format(round(b, 2)))
