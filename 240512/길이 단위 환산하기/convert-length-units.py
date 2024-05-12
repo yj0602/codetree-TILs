@@ -1,4 +1,4 @@
-ft = 30.48
 n = float(input())
-cm = n*ft
-print({round()}.format(cm))
+cm = n * 30.48
+rounded_cm = round(cm, 1)
+print(rounded_cm)
