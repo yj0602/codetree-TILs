@@ -7,5 +7,5 @@ for num_str in n_input:
     lst.append(num)
 
 total = sum(lst)
-average = sum(lst)/len(lst)
-print(total, round(average,2))
+average = total / len(lst) if lst else 0
+print(total, round(average, 1))
