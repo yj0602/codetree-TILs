@@ -1,4 +1,7 @@
 a, b = map(int, input().split())
 
-result = round((a + b) / (a - b), 2)
-print(result)
+if a != b:
+    c = (a + b) / (a - b)
+    print(round(c, 2))
+else:
+    print("Error: a and b cannot be equal.")
