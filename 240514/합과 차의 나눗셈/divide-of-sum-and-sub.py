@@ -1,4 +1,5 @@
-a,b = map(float,input().split())
+a, b = map(float, input().split())
+
 if a != b:
-    c= (a+b)/(a-b)
-print(round(c,2))
+    c = (a + b) / (a - b)
+    print(f"{c:.2f}")
