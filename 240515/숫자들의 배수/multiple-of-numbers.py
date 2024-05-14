@@ -1,11 +1,11 @@
-number = int(input())
-multiples = []
-
-for i in range(1, 11):
-    multiple = number * i
-    multiples.append(multiple)
+n = int(input())
+count = 0
+i = 1
+while True:
+    multiple = n * i
     print(multiple, end=" ")
-
+    i += 1
     if multiple % 5 == 0:
-        if multiples.count(multiple) == 2:
+        count += 1
+        if count == 2:
             break
