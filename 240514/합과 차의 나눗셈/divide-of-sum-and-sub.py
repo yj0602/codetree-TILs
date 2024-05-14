@@ -1,3 +1,4 @@
 a,b = map(int,input().split())
-c= (a+b)/(a-b)
+if a != b:
+    c= (a+b)/(a-b)
 print(round(c,2))
