@@ -1,9 +1,24 @@
-N = int(input())
-A = [0] * 200
+OFFSET = 100
+MAX_R = 200
 
-for _ in range(N):
-    l, r = map(int, input().split())
-    for i in range(l, r):  # 구간의 시작부터 끝까지 반복합니다.
-        A[l] += 1          # 해당 구간의 빈도수를 1 증가시킵니다.
+# 변수 선언 및 입력
+n = int(input())
+segments = [
+    tuple(map(int, input().split()))
+    for _ in range(n)
+]
+checked = [0] * (MAX_R + 1)
 
-print(max(A))
+for x1, x2 in segments:
+    # OFFSET을 더해줍니다.
+    x1, x2 = x1 + OFFSET, x2 + OFFSET
+    
+    # 구간을 칠해줍니다.
+    # 구간 단위로 진행하는 문제이므로
+    # x2에 등호가 들어가지 않음에 유의합니다.
+    for i in range(x1, x2):
+        checked[i] += 1
+
+# 최댓값을 구합니다.
+max_num = max(checked)
+print(max_num)
