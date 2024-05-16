@@ -1,14 +1,8 @@
-a, b, c, d = map(int, input(). split())
-elapsed_time = 0
+a, b, c, d = map(int, input().split())
 
-while True:
-    if a == c and b == d:
-        break
-    elapsed_time += 1
-    c += 1
+start_time = a * 60 + b
+end_time = c * 60 + d
 
-    if c == 60:
-        a += 1
-        c = 0
+elapsed_time = end_time - start_time
 
 print(elapsed_time)
