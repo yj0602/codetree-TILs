@@ -8,6 +8,6 @@ arr = [
 max_cnt = 0
 for i in range(n):
     for j in range(n-2):
-        max_cnt = max(max_cnt, arr[i][j] + arr[j][j+1])
+        max_cnt = max(max_cnt, arr[i][j] + arr[j][j+2])
 
 print(max_cnt)
