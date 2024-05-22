@@ -4,7 +4,7 @@ grid = [
     input().split()
         for _ in range(n)
         ]
-
+        
         # 이동 시에 행과 열이 전부 증가하도록
         # 모든 쌍을 다 잡아봅니다.
         cnt = 0
@@ -17,6 +17,5 @@ grid = [
                                                                                    grid[i][j] != grid[k][l] and \
                                                                                                       grid[k][l] != grid[n - 1][m - 1]:
                                                                                                                           cnt += 1
-
-                                                                                                                                                  print(cnt)                                                                    
-                                                                                                                                                  print(cnt)
+                                                                                                                                                  
+                                                                                                                                                  print(cnt)                             print(cnt)
