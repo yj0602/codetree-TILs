@@ -17,5 +17,6 @@ grid = [
                                                                                    grid[i][j] != grid[k][l] and \
                                                                                                       grid[k][l] != grid[n - 1][m - 1]:
                                                                                                                           cnt += 1
-                                                                                                                                                  
+
+                                                                                                                                                  print(cnt)                                                                    
                                                                                                                                                   print(cnt)
